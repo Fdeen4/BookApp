@@ -12,36 +12,36 @@ public class BookInfo {
     }
 
     public Book lookUpSku (String sku) {
-        if (sku.equalsIgnoreCase("Java01")) {
-            return new Book("Effective Java",
-                    "Joshua Bloch",
-                    "The Definitive Guide to Java Platform Best Practices",
-                    35.00, true);
+        if (sku.equalsIgnoreCase("Java1001")) {
+            return new Book("Head First Java",
+                    "Kathy Sierra and Bert Bates",
+                    "Easy to read Java workbook",
+                    47.50, true);
         } else if (sku.equalsIgnoreCase("Java1002")) {
             return new Book("Thinking in Java",
                     "Bruce Eckel",
                     "Details about Java under the hood",
                     20.00, true);
-        } else if (sku.equalsIgnoreCase("Sql01")) {
-            return new Book("SQL Cookbook",
-                    "Anthony Molinaro",
+        } else if (sku.equalsIgnoreCase("Orcl1003")) {
+            return new Book("OCP: Oracle Certified Professional Java SE",
+                    "Jeanne Boyarsky",
                     "Everything you need to know in one place",
-                    86.00, true);
-        } else if (sku.equalsIgnoreCase("Sql02")) {
-            return new Book("Head First SQL",
-                    "Lynn Beighley",
-                    "Your brain on SQL",
-                    17.50, true);
-        } else if (sku.equalsIgnoreCase("C++01")) {
-            return new Book("The c++ programming language",
-                    "Bjarne Stroustrup",
-                    "Describes c++ programming language",
-                    25.00, true);
-        } else if (sku.equalsIgnoreCase("C++02")) {
-            return new Book("Thinking in C++",
-                    "Bruce Eckel",
-                    "Ideal for anyone already familar in C",
-                    20.00, true);
+                    45.00, true);
+        } else if (sku.equalsIgnoreCase("Python1004")) {
+            return new Book("Automate the Boring Stuff with Python",
+                    "Al Sweigart",
+                    "Fun with Python",
+                    10.50, true);
+        } else if (sku.equalsIgnoreCase("Zombie1005")) {
+            return new Book("The Maker's Guide to the Zombie Apocalypse",
+                    "Simon Monk",
+                    "Defend Your Base with Simple Circuits, Arduino, and Raspberry Pi",
+                    16.50, true);
+        } else if (sku.equalsIgnoreCase("Rasp1006")) {
+            return new Book("Raspberry Pi Projects for the Evil Genius",
+                    "Donald Norris",
+                    "A dozen fiendishly fun projects for the Raspberry Pi!",
+                    14.75, true);
         }
         // returns a blank book object if no match was found
         else return new Book ();
